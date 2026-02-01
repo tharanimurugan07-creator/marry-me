@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>💖 A Question for You</title>
+  <style>
+    body {
+      background: #fce4ec;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 25px;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 10px;
+    }
+    #yes {
+      background: #e91e63;
+      color: white;
+    }
+    #no {
+      background: #eee;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h2>💍 Will you marry me, Arul? 🥹❤️</h2>
+  <button id="yes">💖 Yes</button>
+  <button id="no">❌ No</button>
+</div>
+
+<script>
+  document.getElementById("yes").onclick = function () {
+    window.location.href =
+      "https://wa.me/918122732105?text=Yes%20I%20will%20marry%20you%20💍❤️🥰";
+  };
+
+  const noBtn = document.getElementById("no");
+  noBtn.addEventListener("mouseover", () => {
+    noBtn.style.left = Math.random() * 80 + "vw";
+    noBtn.style.top = Math.random() * 80 + "vh";
+  });
+</script>
+
+</body>
+</html>
